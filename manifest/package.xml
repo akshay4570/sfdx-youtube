@@ -25,12 +25,16 @@
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
-        <members>*</members>
-        <name>LightningComponentBundle</name>
-    </types>
+        <members>Case</members>
+        <members>Contact</members>
+        <members>Account</members>
+        <members>Lead</members>
+        <members>User</members>
+        <name>CustomObject</name>
+    </types>        
     <types>
         <members>*</members>
         <name>StaticResource</name>
     </types>
-    <version>52.0</version>
+    <version>48.0</version>
 </Package>
