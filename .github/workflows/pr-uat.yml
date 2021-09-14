@@ -15,3 +15,5 @@ jobs:
           sfdx-auth-url: ${{ secrets.AUTH_SECRET }}
       - name: sfdx-test-run
         run: sfdx force:apex:test:run -l RunLocalTests -w 30
+      - name: 'Static Code Analysis'
+        run: sfdx scanner:run --target=force-app --outputfile=results.csv --format=csv
