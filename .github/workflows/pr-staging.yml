@@ -36,7 +36,7 @@ jobs:
         echo username value ${{ secrets.USERNAME_STAGING }}
         sfdx force:auth:jwt:grant --clientid=${{ secrets.CONSUMER_KEY }} --username=${{ secrets.USERNAME }} --jwtkeyfile server.key --setdefaultdevhubusername --setalias=hub-org
     - name: 'Static Code Analysis'
-      run: sfdx scanner:run --target=force-app --format=csv
+      run: sfdx scanner:run --target=force-app --outputfile=results.csv --format=csv
     - name: Archive static code analysis results
       uses: actions/upload-artifact@v2
       with:
