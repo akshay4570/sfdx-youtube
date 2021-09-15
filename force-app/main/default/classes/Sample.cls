@@ -1,5 +1,6 @@
 public class Sample{
 
-    // Dummy Class
-    // No function
+    public static void func(){
+        System.debug('Inside this function');
+    }
 }
